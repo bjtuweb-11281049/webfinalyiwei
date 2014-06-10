@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新建文本文档</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--top begin-->
+<div class="top01">
+	<div class="topbox">
+    	<a class="logo" href="index.html" title=""></a>
+  <div class="sub">
+        	<ul>
+            <li class="sub_see">个人首页</li>                       
+    </ul>
+        </div>
+    </div>
+</div>
+<!--top end-->
+<div class="wapper" style="padding-top:86px">
+<!--热点问题-->
+<div class="flash">
+        <ul id="img">
+        <li class="flash_img01"></li>
+        <li class="flash_img02"></li>
+        <li class="flash_img03"></li>
+        </ul>
+  </div>
+	<div class="wap">
+         
+  <div class="indexone">
+        	<ul>
+            <li class="index_img01"> 
+
+
+
+              <h2>学习</h2>
+              <a href="http://www.zhihu.com">知乎</a><br>
+              <a href="http://www.zhihu.com">知乎</a><br>
+              <a href="http://www.zhihu.com">知乎</a><br>
+
+
+
+          </li>
+
+
+
+            <li class="index_img02"> <h2>生活</h2>
+              <a href='http://www.baidu.com'>百度</a><br>
+              <a href='http://www.baidu.com'>百度</a><br>
+              <a href='http://www.baidu.com'>百度</a><br>
+              <a href='http://www.baidu.com'>百度</a><br>
+            </li>
+            <li class="index_img03"><h2>娱乐</h2>
+              <a href='http://www.renren.com'>人人</a><br>
+              <a href='http://www.renren.com'>人人</a><br>
+              <a href='http://www.renren.com'>人人</a><br>
+              <a href='http://www.renren.com'>人人</a><br>
+             </li>
+            </ul>
+		</div>
+
+        
+  </div>
+</div>
+       <!--foot-->
+<div class="foot">
+
+  计算机科学技术00X班
+  =。=
+
+  版权所有，盗版不究~~
+
+  <br>
+  天审备ICP证天字001号
+  &nbsp;
+  封神网备325号
+
+</div>
+ <script type="text/javascript">
+    ;(function(){
+    var i=0;
+    var $=function(ID){return document.getElementById(ID);};
+    var timer=null,speed=3000;
+    $("img").getElementsByTagName("li")[0].style.display="block";
+    ;(function(){
+    if(i>=$("img").getElementsByTagName("li").length){
+    for(var j=0;j<$("img").getElementsByTagName("li").length;j++){
+    $("img").getElementsByTagName("li")[j].style.display="none";
+    }
+    i=1;
+    $("img").getElementsByTagName("li")[0].style.display="block";
+    } else {
+    for(var j=0;j<$("img").getElementsByTagName("li").length;j++){
+    //console.log(j+""+i);
+    if(j===i){
+    $("img").getElementsByTagName("li")[j].style.display="block";
+    } else {
+    $("img").getElementsByTagName("li")[j].style.display="none";
+    }
+    }
+    i++;
+    }
+    timer=setTimeout(arguments.callee,speed);
+    })();
+    })();
+    </script>
+</body>
+</html>
